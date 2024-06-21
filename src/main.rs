@@ -1,3 +1,4 @@
+// by ideikiPIX
 use serde::{Deserialize};
 use std::{fs::File, io::Write};
 use reqwest::{Client, header::AUTHORIZATION};
@@ -28,7 +29,7 @@ struct Players {
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // ngrok API URL and Auth Token
     let ngrok_api_url = "https://api.ngrok.com/tunnels";
-    let ngrok_api_key = "2i8jTMxNnCNb3FIxiSOD73vWQFz_5c7snSJjVkNLjdm1E31oj"; // Replace with your full ngrok API key
+    let ngrok_api_key = ""; // Replace with your full ngrok API key
 
     // Base URL for Minecraft server status request, {} will be replaced with PublicURL
     let mc_status_base_url = "https://api.mcstatus.io/v2/status/java/{}";
